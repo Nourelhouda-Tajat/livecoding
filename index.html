@@ -14,15 +14,22 @@
     .attribution a { color: hsl(228, 45%, 44%); }
     .mini_profil{ display: flex; align-items: center;gap: 20px;}
     img{ border-radius: 100px; height: 60px;}
-    section{background-color: hsl(214, 17%, 92%);font-family: Barlow Semi Condensed; width:500 ;height: fit-content ; padding:5%;}
+    section{background-color: hsl(214, 17%, 92%);font-family: Barlow Semi Condensed; width:500 ;height: fit-content ; padding:5%;display: flex;flex-wrap: wrap; gap: 50px;}
     .header_para{ font-size: larger;}
     p.profil{font-size: 13px;}
-    .box1{background-color: hsl(263, 55%, 52%);padding: 2%;}
-    .box2{background-color: hsl(217, 19%, 35%);padding: 2%;}
-    .box3{background-color: hsl(0, 0%, 100%);padding: 2%;}
-    .box4{background-color: hsl(0, 0%, 7%);padding: 2%;}
-    .box5{background-color: hsl(0, 0%, 100%);padding: 2%;}
-
+    .box1{background-color: hsl(263, 55%, 52%);border-radius: 40px; padding: 4%;height: fit-content;width: 500px;color: white;}
+    .box2{background-color: hsl(217, 19%, 35%);border-radius: 40px; padding: 4%; height: fit-content;width: 250px;color: white;}
+    .box3{background-color: hsl(0, 0%, 100%);border-radius: 40px;padding: 4%; height: fit-content; width: 250px;}
+    .box4{background-color: hsl(0, 0%, 7%);border-radius: 40px;padding: 4%;height: fit-content;width: 500px;color: white;}
+    .box5{background-color: hsl(0, 0%, 100%);border-radius: 40px;padding: 4%;width: 250px; align-self: end;}
+    @media(max-width: 768px){
+      section{
+        display: flex;
+        flex-direction: column;
+      }
+      .box1, .box2, .box3, .box4{width: 300px;height: fit-content;}
+      .box5{width: 300px;height: fit-content;}
+    }
   </style>
 </head>
 <body>
